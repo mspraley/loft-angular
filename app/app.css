@@ -1,0 +1,463 @@
+body {
+  background-color: #313131;
+  -webkit-user-select: none;
+  color: white;
+  font-family: 'Poppins' !important;
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  background: #3e3e3e;
+  padding: 15px;
+  float: left;
+  margin: 10px;
+  animation: component-animation 0.5s 1;
+  box-shadow: 3px 3px 3px #222222;
+  transition: all ease-out 0.2s;
+}
+
+.component:hover {
+    box-shadow: 5px 5px 20px #222222;
+}
+
+.component.open {
+  width: 800px;
+  height: 583px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+
+.component h1 {
+  font-size: 12px;
+}
+
+.row {
+  float: left;
+  max-width: 800px;
+  position: relative;
+}
+
+.column {
+  width: 450px;
+  height: 100%;
+  float: left;
+  min-height: 800px;
+}
+
+.list-item {
+  width: 100%;
+}
+
+.blue-highlight {
+  color: #3696ff;
+}
+
+@keyframes component-animation {
+      0% {transform: scale(0.9)}
+      100% {transform: scale(1)}
+}
+
+@keyframes flight-icon-animation {
+    0% {transform: translateX(0%)}
+    20% {transform: translateX(2%)}
+    40% {transform: translateX(0%)}
+    80% {transform: translateX(-2%)}
+    0% {transform: translateX(0%)}
+}
+
+@keyframes heart-icon-animation {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+.reminders {
+  width: 300px;
+  height: 250px;
+  float: left;
+}
+
+.default-reminder {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.flight-info {
+  width: 33%;
+}
+
+.flight-reminder {
+  margin-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #6e6e6e;
+}
+
+.flight-location {
+  float: left;
+  text-align: left;
+}
+
+.flight-time {
+  font-size: 10px;
+}
+
+.flight-terminal {
+  font-size: 9px;
+  color: #6e6e6e;
+}
+
+.flight-city {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.flight-icon {
+  background: url('img/flight-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+  margin-left: -15px;
+  animation: flight-icon-animation 0.8s infinite ease-in;
+}
+
+.lights {
+  width: 300px;
+}
+
+.light-list {
+  margin-top: 20px;
+}
+
+.lights .list-item {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+.lights .list-item.on {
+  color: #3696ff;
+}
+
+.moods {
+  margin: 20px 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.mood {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding-bottom: 5px;
+  height: 40px;
+  color: #6e6e6e;
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+
+.morning {
+  background-image: url('img/morning.png');
+}
+
+.noon {
+  background-image: url('img/noon.png');
+}
+
+.night {
+  background-image: url('img/night.png');
+}
+
+.mood.active {
+  background-color: #3696ff;
+  color: white;
+}
+
+.bills {
+  width: 400px;
+  height: 250px;
+}
+
+.bill-list-container {
+  height: 130px;
+}
+
+.bills .list-item {
+  width: 33%;
+  height: 70px;
+  float: left;
+  padding-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.electric {
+  background: url('img/electric.png');
+}
+
+.water {
+  background: url('img/water.png');
+}
+
+.wifi {
+  background: url('img/wifi.png');
+}
+
+.bill-name {
+  text-transform: uppercase;
+  color: #6e6e6e;
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bill-total {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.bills-total {
+  font-size: 50px;
+  color: #50e484;
+  text-align: right;
+  border-top: 1px solid #6e6e6e;
+  padding-top: 15px;
+}
+
+.home {
+  width: 400px;
+  height: 350px;
+  background: #3696ff;
+  color: white;
+}
+
+.home-name {
+  font-size: 80px;
+  padding: 0px 0px;
+  margin-bottom: 100px;
+}
+
+.greeting {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9bcbff;
+  margin: 10px 0;
+}
+
+.weather {
+  width: 50%;
+  float:left;
+  line-height: 50px;
+}
+
+.temperature {
+  font-size: 50px;
+  float: left;
+}
+
+.weather-icon {
+  background: url('img/weather-icon.png');
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+.clock {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.degrees {
+  color: white;
+  font-size: 12px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.time {
+  font-size: 50px;
+  width: 80%;
+  float: right;
+  margin-right: 10px;
+  line-height: 50px;
+}
+
+.meridians {
+  color: #328cee;
+  width: 20px;
+  float: right;
+}
+
+.meridian.active {
+  color: white;
+}
+
+.calendar-events {
+    line-height: 50px;
+    font-size: 12px;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.music {
+  width: 430px;
+  height: 100px;
+  position: relative;
+  margin-top: -60px;
+  padding: 0px;
+}
+
+.cover-art {
+  background: url('img/music-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.artist {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  z-index: 15;
+  background: black;
+  padding: 5px;
+}
+
+.song {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  z-index: 15;
+    background: black;
+  padding: 5px;
+}
+
+.health {
+  width: 400px;
+  height: 250px;
+}
+
+.health .list-item {
+  width: 50%;
+  height: 50%;
+  float: left;
+  text-align: left;
+}
+
+.health-name {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.health-value {
+  float: left;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.health-suffix {
+  color: #6e6e6e;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.heart-icon {
+  background: url('img/heart-icon.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-top: -20px;
+  margin-right: 70px;
+  animation: heart-icon-animation 0.8s infinite;
+}
+
+.car {
+  width: 400px;
+}
+
+.charge-title {
+  font-size: 12px;
+  color: #D6FF00;
+  text-align: right;
+  margin: 5px 0;
+}
+
+.car-model {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6e6e6e;
+  height: 30px;
+}
+
+.location {
+  color: #3696ff;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.car-charge {
+  width: 100%;
+  height: 15px;
+  position: relative;
+}
+
+.charge-total {
+  width: 100%;
+  background: #6e6e6e;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+}
+.charge-amount {
+  width: 0px;
+  background: #D6FF00;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: all ease-in 0.8s;
+  z-index: 4;
+}
+

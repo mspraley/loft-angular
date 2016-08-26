@@ -1,0 +1,9 @@
+<div class="health component">
+    <h1>HEALTH</h1>
+    <div ng-repeat="item in data" class="list-item">
+        <div class="health-name">{{item.name}}</div>
+        <div class="health-value">{{item.value}}</div>
+        <div class="health-suffix">{{item.suffix}}</div>
+        <div ng-if="item.name == 'Heartrate'" class="heart-icon"></div>
+    </div>
+</div>

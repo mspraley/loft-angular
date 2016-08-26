@@ -1,0 +1,10 @@
+<div class="bills component" ng-class="{'open' : open == true}">
+    <h1 ng-click="more()">BILLS</h1>
+    <div class="bill-list-container">
+        <div ng-repeat="item in data" class="list-item">
+            <div class="bill-name" ng-class="item.name"></div>
+            <div class="bill-total">{{item.total}}</div>
+        </div>
+    </div>
+    <div class="bills-total">${{total}}</div>
+</div>

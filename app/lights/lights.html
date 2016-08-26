@@ -1,0 +1,14 @@
+<div class="lights component">
+    <h1>LIGHTS</h1>
+    <div class="moods">
+        <div class="mood morning active"></div>
+        <div class="mood noon"></div>
+        <div class="mood night"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="light-list">
+        <div ng-repeat="item in data" class="list-item" ng-class="{'on': item.status == 1}"> 
+            <div class="light-name">{{item.name}}</div>
+        </div>
+    </div>
+</div>

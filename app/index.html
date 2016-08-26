@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+	<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+	<title>Loft</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body ng-cloak>
+	<div ng-controller="loftCtrl as ctrl">
+		<div class="column">
+			<home></home>
+			<music data="ctrl.music" ></music>
+					<car data="ctrl.car"></car>
+		</div>
+		<div class="row">
+			<reminders data="ctrl.reminders"></reminders>
+			<bills data="ctrl.bills"></bills>
+		</div>
+		<div class="row">
+			<health data="ctrl.health"></health>
+			<lights data="ctrl.lights"></lights>
+		</div>
+	</div>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script data-main="require-config" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

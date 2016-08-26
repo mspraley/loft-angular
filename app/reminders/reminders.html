@@ -1,0 +1,22 @@
+<div class="reminders component" ng-class="{'open' : open == true}">
+    <h1 ng-click="more()">REMINDERS</h1>
+    <div ng-repeat="item in data" class="list-item">
+        <div class="flight-reminder" ng-if="item.type == 'flight'">
+            <div class="flight-location flight-info">
+                <div class="flight-city">{{item.departure}}</div>
+                <div class="flight-terminal">{{item.departureterminal}}</div>
+                <div class="flight-time">LEAVES AT <span class="blue-highlight">{{item.departuretime}}<span></div>
+            </div>
+            <div class="flight-icon flight-info"></div>
+            <div class="flight-location flight-info">
+                <div class="flight-city">{{item.arrival}}</div>
+                <div class="flight-terminal">{{item.arrivalterminal}}</div>
+                <div class="flight-time">ARRIVES AT <span class="blue-highlight">{{item.arrivaltime}}<span></div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="default-reminder" ng-if="item.type != 'flight'">
+            <div>{{item.text}}</div>
+        </div>
+    </div>
+</div>
